@@ -87,7 +87,7 @@ Copy `Procfile` into the root of your project
 
 ### Add configuration for Travis
 
-Copy `travis.yml` into the root of your project
+Copy `.travis.yml` into the root of your project
 
 ### Set up Travis
 
