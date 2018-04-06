@@ -1,0 +1,40 @@
+{
+  "name": "sample-mern-ci-cd",
+  "version": "1.0.0",
+  "description": "Sample for MERN CI + CD. Assumes the following:",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "install": "cd client; yarn install",
+    "client": "node scripts/start-client.js",
+    "build": "node scripts/build.js",
+    "lint": "eslint .",
+    "test": "yarn lint; yarn test:server; CI=true yarn test:client",
+    "test:client": "cd client; yarn test",
+    "test:server": "echo \"I don't have any server tests, but you should!\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramblinjan/sample-mern-ci-cd.git"
+  },
+  "author": "Jan Jorgensen <jandjorgensen@gmail.com> (http://ramblinjan.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramblinjan/sample-mern-ci-cd/issues"
+  },
+  "homepage": "https://github.com/ramblinjan/sample-mern-ci-cd#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "concurrently": "^3.5.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  }
+}
