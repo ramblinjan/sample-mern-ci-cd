@@ -101,7 +101,11 @@ Copy `travis.yml` into the root of your project
 
 4. Flip the switch by your repo
 
-5. Push this to a branch and open a PR
+5. Click the gear next to the switch
+
+6. Flip the switch labeled "Build only if .travis.yml is present"
+
+7. Push this to a branch and open a PR
 
 ### Require status checks + auto-deploy
 
