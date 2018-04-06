@@ -6,7 +6,7 @@
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "node server.js",
-    "install": "cd client; yarn install",
+    "install": "cd client; yarn install; yarn build;",
     "client": "node scripts/start-client.js",
     "build": "node scripts/build.js",
     "lint": "eslint .",
