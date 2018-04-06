@@ -18,7 +18,7 @@ Sample for MERN CI + CD. Assumes the following:
 
   ```js
   "start": "concurrently \"npm run server\" \"npm run client\"",
-  "install": "cd client; yarn install",
+  "install": "cd client; yarn install; yarn build;",
   "server": "node server.js",
   "client": "node scripts/start-client.js",
   "build": "node scripts/build.js"
